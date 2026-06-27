@@ -1,0 +1,39 @@
+Exercise 2: E-commerce Platform Search Function
+1. Understanding Asymptotic Notation
+Big O Notation
+
+Big O notation describes how the execution time of an algorithm grows as the input size increases.
+
+Examples:
+
+O(1) → Constant Time
+O(log n) → Logarithmic Time
+O(n) → Linear Time
+O(n²) → Quadratic Time
+Search Operation Cases
+Case	Linear Search	Binary Search
+Best Case	O(1)	O(1)
+Average Case	O(n)	O(log n)
+Worst Case	O(n)	O(log n)
+
+
+
+
+
+
+4. Analysis
+Time Complexity
+Algorithm	Best	Average	Worst
+Linear Search	O(1)	O(n)	O(n)
+Binary Search	O(1)	O(log n)	O(log n)
+Which is Better?
+
+Binary Search is better because:
+
+Much faster for large datasets.
+Reduces search space by half every iteration.
+Requires sorted data.
+
+Conclusion: Binary Search is preferred for e-commerce platforms with thousands of products.
+
+***2 and 3 are given in screenshots provided

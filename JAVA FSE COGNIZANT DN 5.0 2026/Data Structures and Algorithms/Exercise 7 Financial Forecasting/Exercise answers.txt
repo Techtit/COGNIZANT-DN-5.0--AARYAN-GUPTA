@@ -1,0 +1,75 @@
+EXERCISE 7: FINANCIAL FORECASTING
+1. Understanding Recursive Algorithms
+What is Recursion?
+
+Recursion is a programming technique where a method calls itself repeatedly until a stopping condition (base case) is reached.
+
+Recursion simplifies problems that can be divided into smaller versions of the same problem.
+
+Advantages of Recursion
+Simple and readable code.
+Useful for mathematical computations.
+Helps solve complex problems efficiently.
+Base Case
+
+A base case stops recursive calls and prevents infinite recursion.
+
+2. Future Value Formula
+
+The future value of an investment can be calculated as:
+
+Future Value=Present Value×(1+Growth Rate)
+Years
+
+Recursive Relation:
+
+FV(n)=FV(n−1)×(1+r)
+
+Base Case:
+
+FV(0)=Present Value
+
+
+2.Given in screenshots
+3.Given in screenshots
+
+
+4.Analysis
+Time Complexity
+
+The recursive function makes one recursive call for each year.
+
+Therefore:
+
+T(n)=T(n−1)+1
+
+Time Complexity:
+
+O(n)
+Space Complexity
+
+The recursion stack stores one function call per year.
+
+Space Complexity:
+
+O(n)
+
+5.Optimization
+
+The recursive solution can be optimized using the mathematical formula and Math.pow().
+
+public static double forecastOptimized(double currentValue,
+                                       double growthRate,
+                                       int years) {
+
+    return currentValue *
+            Math.pow(1 + growthRate, years);
+}
+Optimized Complexity
+Method	Time Complexity	Space Complexity
+Recursive	O(n)	O(n)
+Math.pow()	O(log n)	O(1)
+Conclusion
+
+The recursive approach is easy to understand and implement. However, for large forecasting periods, the optimized approach using Math.pow() is preferred because it reduces execution time and memory usage.
+
